@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F8FAFC;
+  color: #2C3E50;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.header-row {
+  background: #1b6ca8;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-row ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-row ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header-row ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.header-row ul li a:hover {
+  color: #a7c7e7;
+}
+
+/* Section Box */
+.row {
+  padding: 40px 20px;
+  background: linear-gradient(to right, #A7C7E7, #F8FAFC);
+  margin: 80px auto 40px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Ensuring spacing between sections */
+.row:not(:first-child) {
+  margin-top: 20px;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px; /* Pushes first section below header */
+}
+
+#home .box img {
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  margin-right: 40px;
+}
+
+/* Project Section */
+#projects {
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.project-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex: 1;
+  min-width: 300px; /* Ensures boxes are not too small */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+/* About & Skills Separation */
+#about h1 {
+  margin-bottom: 20px; /* Adds space after "About" */
+}
+
+#about h2 {
+  margin-top: 40px; /* Adds space before "Skills" */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1b6ca8;
+  color: white;
+  border-radius: 0;
+}
+/* CONTACT SECTION - Align Logos & Links in a Row */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Reduce Logo Size */
+.contact-icon {
+  width: 100px;  /* Reduced from 40px */
+  height: 100px;
+  display: block;
+  margin: 0 auto 5px; /* Centers the image and adds spacing */
+}
+
+/* Contact Links */
+.contact-link {
+  text-decoration: none;
+  font-size: 28px;  /* Adjusted text size */
+  color: #2C3E50;
+  font-weight: bold;
+}
+
+/* Gmail Styling */
+.gmail {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2C3E50;
+  text-align: center;
+}
+
+.gmail img {
+  width: 150px; /* Smaller size */
+  height: 100px;
+  display: block;
+  margin: 0 auto 5px;
+}
+/* SKILLS SECTION */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Skill Box Styling */
+.skill-box {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: transparent; /* No background */
+  border: 2px solid currentColor; /* Matches text color */
+  color: inherit; /* Inherits color from the heading */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  transform: scale(1.1);
+}
+
+
